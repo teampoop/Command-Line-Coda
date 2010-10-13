@@ -1,5 +1,5 @@
-#!/opt/local/bin/perl -w
-
+#!/usr/bin/env perl
+use warnings;
 
 #	Command-Line Coda
 #	------------------
