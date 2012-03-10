@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+CODAPATH = ENV['CODAPATH'] || "/Applications/Coda.app"
+
+def help
+  puts "Usage: #{$0} [filename(s) / directory name(s)]"
+  exit
+end
+
+help if ARGV.size == 0 || ["-h", "--help"].include?(ARGV[0])
+
+files = ARGV.map do |file|
+  File.directory?(file) ? Dir.glob(file + "/*") : [file]
+end
+files.flatten!
+
+FileUtils.touch files
+
+`open -a #{CODAPATH} #{files.join(" ")}`
