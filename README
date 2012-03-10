@@ -10,8 +10,16 @@ Command-Line Coda is a script for [Panic](http://panic.com)'s Coda. It allows yo
 	coda somedir                      # if you specify a directory, coda will open all files in that directory
 	coda file1.txt file2.txt somedir3 # you can open multiple files
 
-# Install
+## Install
 
 	gem install coda
+
+## Setting Coda's path
+
+By default, we assume that Coda lives at `/Applications/Coda.app`. To override this path, set the `CODAPATH` variable:
+
+	CODAPATH=/User/Applications/Coda.app coda test.txt
+
+Put it in your `.bash_profile` so you don't have to set it each time.
 
 Written by [Aditya Bhargava](http://adit.io). No warranty is implied, use at your own risk.
