@@ -17,4 +17,4 @@ files.flatten!
 
 FileUtils.touch files
 
-`open -a #{CODAPATH} #{files.join(" ")}`
+`open -a \"#{CODAPATH}\" #{files.join(" ")}`
