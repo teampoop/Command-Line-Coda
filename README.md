@@ -23,6 +23,6 @@ The following examples are for use with Coda 2.
 
 Put the following line in your .bash_profile so you don't have to set it every time.
 
-  export CODAPATH="/User/Applications/Coda 2.app"
+	export CODAPATH="/User/Applications/Coda 2.app"
   
 Written by [Aditya Bhargava](http://adit.io). No warranty is implied, use at your own risk.
