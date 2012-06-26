@@ -19,10 +19,10 @@ Command-Line Coda is a script for [Panic](http://panic.com)'s Coda. It allows yo
 By default, we assume that Coda lives at `/Applications/Coda.app`. To override this path, set the `CODAPATH` variable:
 The following examples are for use with Coda 2.
 
-	CODAPATH="/User/Applications/Coda 2.app" coda test.txt
+	CODAPATH="/Applications/Coda 2.app" coda test.txt
 
 Put the following line in your .bash_profile so you don't have to set it every time.
 
-	export CODAPATH="/User/Applications/Coda 2.app"
+	export CODAPATH="/Applications/Coda 2.app"
   
 Written by [Aditya Bhargava](http://adit.io). No warranty is implied, use at your own risk.
